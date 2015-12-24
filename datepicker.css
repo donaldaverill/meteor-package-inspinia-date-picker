@@ -1,0 +1,10 @@
+.date {
+  margin: auto;
+  margin-bottom: 25px;
+  width: '50%';
+  max-width: 400px;
+}
+
+.date input:focus {
+  border-color: #EDEDED;
+}
