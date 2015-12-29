@@ -1,13 +1,23 @@
-<template name="datePicker">
-  <div class="input-group date" data-date-picker>
-    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-    <input type="text" class="form-control" data-field-name="{{field}}" value={{moFormat this.date 'ddd MMMM D YYYY'}} data-date-input readonly>
-  </div>
-  {{#unless success}}
-    {{#if submitted}}
-      {{#if errorMessage}}
-        <div class="alert alert-danger" role="alert">{{errorMessage}}</div>
-      {{/if}}
-    {{/if}}
-  {{/unless}}
-</template>
+Template.datePicker.onRendered(function() {
+	const instance = this;
+	const options = instance.data &&
+		instance.data.options ?
+		instance.data.options : {
+			format: 'D MM d yyyy',
+			autoclose: true,
+			orientation: 'bottom',
+		};
+	const datePicker = instance.$('[data-date-picker]');
+	const initialDate = instance.data &&
+		instance.data.initialDate ?
+		instance.data.initialDate : new Date();
+
+	datePicker.datepicker(options);
+	datePicker.datepicker('setDate', initialDate);
+
+	if (instance.data && instance.data.onChange) {
+		datePicker.datepicker().on('changeDate', () => {
+			instance.data.onChange.call(instance);
+		});
+	}
+});

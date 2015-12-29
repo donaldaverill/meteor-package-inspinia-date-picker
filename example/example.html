@@ -13,23 +13,10 @@
 
 <template name="formTemplate">
   <form id="someForm">
-    {{> inspiniaTextField
-      type='text'
-      field='name'
-      label='First Name'
-      instructions='First Name'
-      value=(formValue 'name')
-      onChange=fieldChanged
-    }}
-    {{> inspiniaTextField
-      type='number'
-      field='sales'
-      label='Total Sales'
-      prefix='$'
-      min=0
-      value=(formValue 'sales')
-      onChange=fieldChanged
-    }}
-    <input type="submit">
+    {{> datePicker
+      field='awesomeDate'
+      initialDate=maybeYesterday
+      onChange=dateChanged
+      options=datePickerOptions}}
   </form>
 </template>

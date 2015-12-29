@@ -1,29 +1,26 @@
 if (Meteor.isClient) {
-  const formFields = new ReactiveDict('formFields');
   Template.formTemplate.helpers({
-    formValue(fieldName) {
-      return formFields.get(fieldName);
-    },
-    fieldChanged() {
-      // must return a function
+    dateChanged() {
       return function() {
         fieldName = this.$('input').data().fieldName;
         newValue = this.$('input').val();
-        formFields.set(fieldName, newValue);
+        console.log('You changed the date!', newValue);
       };
     },
-  });
-
-  Template.formTemplate.events({
-    'submit'(e, t) {
-      e.preventDefault();
-      const message =
-      `
-      Form values
-      Name: ${formFields.get('name')}
-      Sales: ${formFields.get('sales')}
-      `;
-      alert(message);
+    maybeYesterday() {
+      const d = new Date();
+      if (d.getHours() < 11) {
+        d.setDate(d.getDate() - 1);
+      }
+      d.setHours(0, 0, 0, 0);
+      return d;
+    },
+    datePickerOptions() {
+      return {
+        format: 'MM d yyyy',
+        autoclose: true,
+        orientation: 'top',
+    	};
     }
   });
 }

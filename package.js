@@ -10,11 +10,13 @@ Package.describe({
 const packages = [
   'ecmascript',
   'templating',
+  'rajit:bootstrap3-datepicker@1.5.0',
 ];
 
 const clientFiles = [
   'datePicker.html',
   'datePicker.js',
+  'datePicker.css',
 ];
 
 Package.onUse(function(api) {

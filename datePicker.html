@@ -1,7 +1,7 @@
 <template name="datePicker">
   <div class="input-group date" data-date-picker>
     <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-    <input type="text" class="form-control" data-field-name="{{field}}" value={{moFormat this.date 'ddd MMMM D YYYY'}} data-date-input readonly>
+    <input type="text" class="form-control" data-field-name="{{field}}" data-date-input readonly>
   </div>
   {{#unless success}}
     {{#if submitted}}
