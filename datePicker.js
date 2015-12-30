@@ -1,4 +1,4 @@
-Template.datePicker.onRendered(function() {
+Template.inspiniaDatePicker.onRendered(function() {
 	const instance = this;
 	const options = instance.data &&
 		instance.data.options ?

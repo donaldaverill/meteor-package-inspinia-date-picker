@@ -1,6 +1,6 @@
 Package.describe({
   name: 'fourquet:inspinia-date-picker',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'Blaze date picker component to use with the Inspinia Bootstrap Admin Theme',
   git: 'https://github.com/fourquet/meteor-package-inspinia-date-picker',
   documentation: 'README.md',

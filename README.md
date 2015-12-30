@@ -5,7 +5,7 @@
 <!-- formTemplate.html -->
 <template name="formTemplate">
   <form id="someForm">
-    {{> datePicker
+    {{> inspiniaDatePicker
       field='awesomeDate'
       initialDate=maybeYesterday
       onChange=dateChanged
