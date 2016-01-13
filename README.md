@@ -1,5 +1,5 @@
 # Blaze date picker component for the [Inspinia](https://wrapbootstrap.com/theme/inspinia-responsive-admin-theme-WB0R5L90S) admin theme.
-**Note:** [Inspinia Styles](https://wrapbootstrap.com/theme/inspinia-responsive-admin-theme-WB0R5L90S) must be included separately. See below for [instructions](#instructions) on how to include styles.
+**Note:** [Inspinia Styles](https://wrapbootstrap.com/theme/inspinia-responsive-admin-theme-WB0R5L90S) must be included separately. See below for [instructions](#how-to-include-styles) on how to include styles.
 ### Installation
 ```bash
 meteor add fourquet:inspinia-date-picker
