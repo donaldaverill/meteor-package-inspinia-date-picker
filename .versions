@@ -11,7 +11,7 @@ diff-sequence@1.0.1
 ecmascript@0.1.6
 ecmascript-runtime@0.2.6
 ejson@1.0.7
-fourquet:inspinia-date-picker@0.0.2
+fourquet:inspinia-date-picker@0.0.3
 html-tools@1.0.5
 htmljs@1.0.5
 id-map@1.0.4
@@ -21,7 +21,7 @@ minifiers@1.1.7
 mongo-id@1.0.1
 observe-sequence@1.0.7
 promise@0.5.1
-rajit:bootstrap3-datepicker@1.5.0
+rajit:bootstrap3-datepicker@1.5.1
 random@1.0.5
 reactive-var@1.0.6
 spacebars@1.0.7

@@ -76,7 +76,7 @@ See [full example in the repository](https://github.com/fourquet/meteor-package-
 * Add the package to your app: `meteor add fourquet:inspinia-styles`.
 
 #### Version
-0.0.2
+0.0.3
 
 #### License
 MIT
